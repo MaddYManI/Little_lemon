@@ -6,9 +6,14 @@ import lemon_dessert from './lemon dessert.jpg'
 import bike_image from './bike image.png'
 import Footer from '../Footer';
 import Testimonals from './Testimonals'
+import { useNavigate } from 'react-router-dom'
 
 
 function Homepage () {
+    const navigate = useNavigate()
+    const trigger_reserve=()=>{
+        navigate('/reserve_a_table')
+    }
     return(
         <body>
             <div className='hero'>
@@ -16,7 +21,7 @@ function Homepage () {
                     <h1 className='textstyle'>Little Lemon</h1>
                     <h3 className='textcity'>Chicago</h3>
                     <p className='lines'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                    <button type="button" className='button'>Reserve a table</button>
+                    <button type="button" className='button' onClick={trigger_reserve}>Reserve a table</button>
                 </label>
                 <img src={restaurantfood} alt ="Restaurantfood" className='overlay' />
             </div>

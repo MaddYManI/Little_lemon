@@ -70,6 +70,7 @@ nav ul li:hover::after {
 header nav img {
   grid-area: logo;
   justify-self: center;
+  margin: 3%;
 }
 header nav ul {
   grid-area: menus;

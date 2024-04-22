@@ -8,6 +8,7 @@
     grid-template-rows: 406px;
     grid-template-areas: "sample text dishphoto samples";
     background-color: #21342E;
+    padding: 10px;
 }
 
 .textfont {

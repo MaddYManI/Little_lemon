@@ -1,10 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import './Footer.css'
 
 function Footer (){
+    const navigate  =useNavigate()
+
+    const trigger_navigate=()=>{
+        navigate('/')
+    }
     return(
         <footer className='box' >
                   <ul className='navigation'><b>Navigation</b>
-                    <li className='footer2'>Home</li>
+                    <li className='footer2' onClick={trigger_navigate}>Home</li>
                     <li className='footer2'>About</li>
                     <li className='footer2'>menu</li>
                     <li className='footer2'>reservation</li>
