@@ -27,7 +27,7 @@ function Nav (){
                     </label>
                     <img src={logo} alt ="Logo" />
                         <ul className="lists">
-                            <li className="list1"><b><Link to='/'className="links">Home</Link></b></li>
+                            <li className="list1"><b><Link to='/Little_lemon'className="links">Home</Link></b></li>
                             <li className="list1"><b><Link to='/aboutme' className="links">Aboutme</Link></b></li>
                             <li className="list1"><b><Link to='/menu' className="links">Menu</Link></b></li>
                             <li className="list1"><b><Link to='/reserve_a_table' className="links" data-testid="resv btn">Reservation</Link></b></li>
@@ -35,7 +35,7 @@ function Nav (){
                         </ul>
                 </nav>
                     <Routes>
-                        <Route path="/" element={<Homepage />} />
+                        <Route path="/Little_lemon" element={<Homepage />} />
                         <Route path="/aboutme" element={<Aboutme />} />
                         <Route path="/menu" element={<Menu />} />
                         <Route path="/BookingPage" element={<BookingPage/>} />
