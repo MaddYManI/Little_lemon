@@ -2,8 +2,10 @@
   "homepage": "https://maddymani.github.io/Little_lemon",
   "name": "practice",
   "version": "0.1.0",
+  "proxy": "http://localhost:3000/",
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.637.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
